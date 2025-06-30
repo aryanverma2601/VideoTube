@@ -1,0 +1,5 @@
+*.env
+.env
+.eve.*
+/node_modules
+./dist

@@ -56,7 +56,7 @@ userSchema.pre("save", async function (next) {
   next();
 }); //dont use arrow funcion because arrow function does not know the context or this
 
-userSchema.methods.isPasswordCorrext = async function (password) {
+userSchema.methods.isPasswordCorrect = async function (password) {
   return await bcrypt.compare(password, this.password); //return true or false
 };
 
